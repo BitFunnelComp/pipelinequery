@@ -25,7 +25,7 @@ typedef struct {
 }Proc_Cpu_Occupy_t;
  
  
-//获取第N项开始的指针
+
 const char* get_items(const char*buffer ,unsigned int item){
 	
 	const char *p =buffer;
@@ -48,7 +48,7 @@ const char* get_items(const char*buffer ,unsigned int item){
 }
  
  
-//获取总的CPU时间
+
 unsigned long get_cpu_total_occupy(){
 	
 	FILE *fd;
@@ -69,7 +69,7 @@ unsigned long get_cpu_total_occupy(){
 }
  
  
-//获取进程的CPU时间
+//鑾峰彇杩涚▼鐨凜PU鏃堕棿
 unsigned long get_cpu_proc_occupy(unsigned int pid){
 	
 	char file_name[64]={0};
@@ -94,7 +94,7 @@ unsigned long get_cpu_proc_occupy(unsigned int pid){
 }
  
  
-//获取CPU占用率
+
 float get_proc_cpu(unsigned int pid){
  	
 	unsigned long totalcputime1,totalcputime2;
@@ -117,7 +117,7 @@ float get_proc_cpu(unsigned int pid){
 }
  
  
-//获取进程占用内存
+
 unsigned int get_proc_mem(unsigned int pid){
 	
 	char file_name[64]={0};
@@ -144,7 +144,7 @@ unsigned int get_proc_mem(unsigned int pid){
 }
  
  
-//获取进程占用虚拟内存
+
 unsigned int get_proc_virtualmem(unsigned int pid){
 	
 	char file_name[64]={0};
@@ -171,7 +171,7 @@ unsigned int get_proc_virtualmem(unsigned int pid){
 }
  
  
-//进程本身
+
 int get_pid(const char* process_name, const char* user = nullptr)
 {
 	if(user == nullptr){
