@@ -69,7 +69,7 @@ unsigned long get_cpu_total_occupy(){
 }
  
  
-//获取进程的CPU时间
+
 unsigned long get_cpu_proc_occupy(unsigned int pid){
 	
 	char file_name[64]={0};
